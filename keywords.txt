@@ -1,0 +1,28 @@
+#######################################
+# Syntax Coloring Map For HX711_ADC
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+RotaryProcessor	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+
+process						KEYWORD2
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+DIR_NONE					LITERAL1
+DIR_CW						LITERAL1
+DIR_CCW			   			LITERAL1
+R_START						LITERAL1
+HALF_STEP					LITERAL1
+FULL_STEP					LITERAL1
