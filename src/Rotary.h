@@ -34,10 +34,10 @@
 
 
 
-class Rotary{
+class RotaryProcessor{
 
 	public:
-		Rotary(unsigned int pinA, unsigned int pinB ,uint8_t mode = HALF_STEP);
+		RotaryProcessor(unsigned int pinA, unsigned int pinB ,uint8_t mode = HALF_STEP);
 		unsigned char process();
 		
 	protected:

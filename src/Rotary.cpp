@@ -62,7 +62,7 @@
 
 #include "Rotary.h"
 
-Rotary::Rotary(unsigned int pinA, unsigned int pinB ,uint8_t mode = HALF_STEP) //constructor
+RotaryProcessor::RotaryProcessor(unsigned int pinA, unsigned int pinB ,uint8_t mode = HALF_STEP) //constructor
 { 	
 	_pinA = pinA;
 	_pinB = pinB;
@@ -74,7 +74,7 @@ Rotary::Rotary(unsigned int pinA, unsigned int pinB ,uint8_t mode = HALF_STEP) /
 
 
 
-unsigned char Rotary::process() {
+unsigned char RotaryProcessor::process() {
   // Grab state of input pins.
   unsigned char pinstate = (_pinA << 1) | _pinB;
   // Determine new state from the pins and state table.
