@@ -37,12 +37,12 @@
 class RotaryProcessor{
 
 	public:
-		RotaryProcessor(unsigned int pinA, unsigned int pinB ,uint8_t mode = HALF_STEP);
+		RotaryProcessor(unsigned int pinA, unsigned int pinB ,unsigned char mode);
 		unsigned char process();
 		
 	protected:
 		unsigned int state = R_START;
-		uint8_t _mode = HALF_STEP;
+		unsigned char _mode = HALF_STEP;
 		unsigned int _pinA;
 		unsigned int _pinB;
 		
@@ -85,7 +85,7 @@ class RotaryProcessor{
 			{RF_CCW_NEXT, RF_CCW_FINAL, RF_CCW_BEGIN, R_START},
 			};
 
-}
+};
 
 #endif
  

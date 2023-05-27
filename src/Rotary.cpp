@@ -61,8 +61,10 @@
  */
 
 #include "Rotary.h"
+#include <Arduino.h>
 
-RotaryProcessor::RotaryProcessor(unsigned int pinA, unsigned int pinB ,uint8_t mode = HALF_STEP) //constructor
+
+RotaryProcessor::RotaryProcessor(unsigned int pinA, unsigned int pinB ,unsigned char mode = HALF_STEP) //constructor
 { 	
 	_pinA = pinA;
 	_pinB = pinB;
@@ -76,7 +78,8 @@ RotaryProcessor::RotaryProcessor(unsigned int pinA, unsigned int pinB ,uint8_t m
 
 unsigned char RotaryProcessor::process() {
   // Grab state of input pins.
-  unsigned char pinstate = (_pinA << 1) | _pinB;
+  
+  unsigned char pinstate = (digitalRead(_pinA) << 1) | digitalRead(_pinB);
   // Determine new state from the pins and state table.
   if(_mode == HALF_STEP)
   {
