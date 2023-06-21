@@ -60,7 +60,7 @@
  * than 10 lines of logic.
  */
 
-#include "Rotary.h"
+#include "RotaryProcessor.h"
 #include <Arduino.h>
 
 

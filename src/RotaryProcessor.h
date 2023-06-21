@@ -2,8 +2,8 @@
  * Rotary encoder library for STM/ other C based MCU.
  */
 
-#ifndef rotary_h
-#define rotary_h
+#ifndef rotaryProcessor_h
+#define rotaryProcessor_h
 
 // Values returned by 'process'
 // No complete step yet.
